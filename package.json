@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ignore-path .gitignore .",
     "lint-fix": "npm run lint -- --fix",
-    "format": "npx prettier --ignore-path .gitignore --check .",
-    "format-fix": "npx prettier --ignore-path .gitignore --white ."
+    "format": "prettier --ignore-path .gitignore --check .",
+    "format-fix": "prettier --ignore-path .gitignore --white ."
   },
   "repository": {
     "type": "git",
