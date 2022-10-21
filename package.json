@@ -9,7 +9,7 @@
     "lint": "eslint --ignore-path .gitignore .",
     "lint-fix": "npm run lint -- --fix",
     "format": "prettier --ignore-path .gitignore --check .",
-    "format-fix": "prettier --ignore-path .gitignore --white ."
+    "format-fix": "prettier --ignore-path .gitignore --write ."
   },
   "repository": {
     "type": "git",
