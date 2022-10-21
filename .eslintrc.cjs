@@ -6,7 +6,6 @@ module.exports = {
   extends: [
       'standard',
       'plugin:sonarjs/recommended',
-      'some-other-config-you-use',
       'prettier'
   ],
   overrides: [
