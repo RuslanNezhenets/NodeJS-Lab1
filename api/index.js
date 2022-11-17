@@ -1,13 +1,16 @@
-import { createServer } from 'http'
 import Router from '../lib/Router.js'
-
-const router = new Router()
+import Application from '../lib/Application.js'
 
 const PORT = 5000
 
-const server = createServer((req, res) => {
-  router.emitter.emit(`[${req.url}]:[${req.method}]`, req, res)
-  res.end(req.url)
+const app = new Application()
+
+const router = new Router()
+
+router.get('/test', (req, res) => {
+  res.end('You send request to /test')
 })
 
-server.listen(PORT, () => console.log(`Server started on PORT ${PORT}`))
+app.addRouter(router)
+
+app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`))
