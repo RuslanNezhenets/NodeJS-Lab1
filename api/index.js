@@ -14,3 +14,5 @@ router.get('/test', (req, res) => {
 app.addRouter(router)
 
 app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`))
+
+app.shutdown()
