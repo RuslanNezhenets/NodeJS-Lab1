@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RuslanNezhenets/NodeJS-Lab1.git"
+    "url": "git+https://github.com/RuslanNezhenets/NodeJS-Labs.git"
   },
   "keywords": [
     "lab"
@@ -22,9 +22,9 @@
   "author": "Nezhenets Ruslan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RuslanNezhenets/NodeJS-Lab1/issues"
+    "url": "https://github.com/RuslanNezhenets/NodeJS-Labs/issues"
   },
-  "homepage": "https://github.com/RuslanNezhenets/NodeJS-Lab1#readme",
+  "homepage": "https://github.com/RuslanNezhenets/NodeJS-Labs#readme",
   "devDependencies": {
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
