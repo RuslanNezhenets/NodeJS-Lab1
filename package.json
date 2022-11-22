@@ -1,10 +1,14 @@
 {
-  "name": "nodejs-lab1",
+  "name": "nodejs-labs",
   "version": "1.0.0",
-  "description": "Lab-1",
+  "description": "Labs",
+  "engines": {
+    "node": "14.x"
+  },
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "node api/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ignore-path .gitignore .",
     "lint-fix": "npm run lint -- --fix",
@@ -14,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RuslanNezhenets/NodeJS-Lab1.git"
+    "url": "git+https://github.com/RuslanNezhenets/NodeJS-Labs.git"
   },
   "keywords": [
     "lab"
@@ -22,10 +26,11 @@
   "author": "Nezhenets Ruslan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RuslanNezhenets/NodeJS-Lab1/issues"
+    "url": "https://github.com/RuslanNezhenets/NodeJS-Labs/issues"
   },
-  "homepage": "https://github.com/RuslanNezhenets/NodeJS-Lab1#readme",
+  "homepage": "https://github.com/RuslanNezhenets/NodeJS-Labs#readme",
   "devDependencies": {
+    "@vercel/node": "^2.6.4",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
