@@ -2,24 +2,32 @@ import Router from '../lib/Router.js'
 
 const router = new Router()
 
-router.get('/hello', (req, res, payload) => {
-  res.json(`You send GET request to ${req.url}`)
+router.get('/hello', (req, res) => {
+  res.json('You send GET request to HELLO')
 })
 
-router.post('/hello', (req, res, payload) => {
-  res.json({ contentType: req.headers['content-type'], payload })
+router.post('/user', (req, res, payload) => {
+  res.json({
+    text: 'You send POST request to HELLO',
+    contentType: req.headers['content-type'],
+    payload,
+  })
 })
 
-router.put('/hello', (req, res, payload) => {
-  res.json({ contentType: req.headers['content-type'], payload })
+router.put('/user', (req, res, payload) => {
+  res.json({
+    text: 'You send PUT request to HELLO',
+    contentType: req.headers['content-type'],
+    payload,
+  })
 })
 
-router.delete('/hello', (req, res, payload) => {
-  res.json(`You send DELETE request to ${req.url}`)
+router.delete('/hello', (req, res) => {
+  res.json('You send DELETE request to HELLO')
 })
 
-router.options('/hello', (req, res, payload) => {
-  res.json(`You send OPTIONS request to ${req.url}`)
+router.options('/hello', (req, res) => {
+  res.json('You send OPTIONS request to HELLO')
 })
 
 export default router
