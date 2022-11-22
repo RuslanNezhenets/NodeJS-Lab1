@@ -8,6 +8,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "node api/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ignore-path .gitignore .",
     "lint-fix": "npm run lint -- --fix",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/RuslanNezhenets/NodeJS-Labs#readme",
   "devDependencies": {
+    "@vercel/node": "^2.6.4",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
